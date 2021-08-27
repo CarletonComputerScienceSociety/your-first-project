@@ -1,0 +1,49 @@
+.home-page {
+  background-color: white;
+  min-height: 100vh;
+  height: fit-content;
+  max-height: fit-content;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-page-container {
+  max-width: 900px;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home-page-logo {
+  margin-top: 7vh;
+  width: 7rem;
+}
+
+.home-page-header {
+  font-size: 75px;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-align: center;
+}
+
+.home-page-content {
+  max-width: 70rem;
+  margin-bottom: 4rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+.home-page-items {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 5rem;
+}

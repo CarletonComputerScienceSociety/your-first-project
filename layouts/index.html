@@ -1,3 +1,21 @@
 {{ define "main" }}
-  {{- partial "footer.html" . -}}
+  <div class="home-page">
+    <div class="home-page-container">
+      <img class="home-page-logo" src="/images/logo.png" />
+      <p class="home-page-header">Your First Project.</p>
+      <p class="home-page-content">
+        Written by Carleton students, for Carleton students. Your First Project
+        is the best way to begin your first personal project without any prior
+        experience.
+      </p>
+      <div class="home-page-items">
+        {{ range (where .Site.RegularPages "Section" "articles").ByDate.Reverse }}
+          <a class="hvr-float" href="{{ .RelPermalink }}"
+            >{{- partial "article-card.html" . -}}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+    {{- partial "footer.html" . -}}
+  </div>
 {{ end }}
